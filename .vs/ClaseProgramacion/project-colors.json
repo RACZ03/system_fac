@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "937f5458-85f7-4157-aea2-765d79c9c907": {
+      "ProjectGuid": "937f5458-85f7-4157-aea2-765d79c9c907",
+      "DisplayName": "Logica",
+      "ColorIndex": 0
+    },
+    "adaf9f8f-29de-496b-b4b3-beaa89fa1b94": {
+      "ProjectGuid": "adaf9f8f-29de-496b-b4b3-beaa89fa1b94",
+      "DisplayName": "Datos",
+      "ColorIndex": 1
+    },
+    "eac071c0-5070-499a-9016-70d3db0ce898": {
+      "ProjectGuid": "eac071c0-5070-499a-9016-70d3db0ce898",
+      "DisplayName": "Interfaz",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

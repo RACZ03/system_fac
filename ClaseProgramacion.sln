@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{ADAF9F8F-29DE-496B-B4B3-BEAA89FA1B94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{937F5458-85F7-4157-AEA2-765D79C9C907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaz", "Interfaz\Interfaz.csproj", "{EAC071C0-5070-499A-9016-70D3DB0CE898}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADAF9F8F-29DE-496B-B4B3-BEAA89FA1B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADAF9F8F-29DE-496B-B4B3-BEAA89FA1B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADAF9F8F-29DE-496B-B4B3-BEAA89FA1B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADAF9F8F-29DE-496B-B4B3-BEAA89FA1B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937F5458-85F7-4157-AEA2-765D79C9C907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937F5458-85F7-4157-AEA2-765D79C9C907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937F5458-85F7-4157-AEA2-765D79C9C907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937F5458-85F7-4157-AEA2-765D79C9C907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC071C0-5070-499A-9016-70D3DB0CE898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC071C0-5070-499A-9016-70D3DB0CE898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC071C0-5070-499A-9016-70D3DB0CE898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC071C0-5070-499A-9016-70D3DB0CE898}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

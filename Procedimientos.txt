@@ -1,0 +1,405 @@
+// Reporte categoria
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spCategoriaR]    Script Date: 16/02/2017 21:23:48 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[spCategoriaR](@Id int)
+as
+if(@Id= 0)
+begin
+select Id,CodigoDeLaCategoria, DescripcionDeCategoria
+from dbo.Categorias
+end 
+else
+select Id,CodigoDeLaCategoria, DescripcionDeCategoria 
+from dbo.Categorias where Id = @Id
+
+// Procedimiento de Entrada
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[Entrada]    Script Date: 16/02/2017 21:24:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[Entrada]
+@EntradaId int=0,
+@TipoDeEntradaId int=0,
+@Descripcion varchar(50) = 'Prueba',
+@Numero int,
+@Fecha varchar(10)= '04/02/2017',
+@Detalles dbo.TDetalleDeEntrada readonly
+as
+begin
+if @EntradaId=0
+begin
+insert into Entradas(DescripcionDeEntrada, FechaDeEntrada, TipoDeEntradaId, NumeroDeEntrada)
+values(@Descripcion, Convert(datetime,@Fecha,103), @TipoDeEntradaId, @Numero)
+set @EntradaId = SCOPE_IDENTITY()
+end
+else
+begin
+update E
+set E.DescripcionDeEntrada = @Descripcion,
+    E.FechaDeEntrada = CONVERT(datetime, @Fecha,103),
+	E.NumeroDeEntrada = @Numero,
+	E.TipoDeEntradaId = @TipoDeEntradaId
+	from Entradas as E where E.Id = @EntradaId
+
+Delete DE
+from DetallesDeEntradas as DE
+where DE.EntradaId = @EntradaId
+and not exists (select 1 from @Detalles as D where D.ProductoId = DE.ProductoId)
+
+update DE
+set De.CantidadDeEntrada = D.CantidadDeEntrada,
+    De.PrecioDeEntrada =  D.PrecioDeEntrada
+from DetallesDeEntradas as DE
+inner join @Detalles as D on D.ProductoId = DE.ProductoId
+where DE.EntradaId = @EntradaId
+end
+
+insert into DetallesDeEntradas(EntradaId, ProductoId, PrecioDeEntrada, CantidadDeEntrada)
+select @EntradaId, ProductoId, PrecioDeEntrada, CantidadDeEntrada from @Detalles as D
+where not exists(
+select 1  from DetallesDeEntradas as DE
+where DE.EntradaId = @EntradaId and DE.ProductoId = D.ProductoId
+)
+end
+
+// Pro Producto reporte
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spProductosR]    Script Date: 16/02/2017 21:25:15 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[spProductosR](@Id int)
+as
+if(@Id= 0)
+begin
+select Id,CodigoDelProducto,Existencia,costo,PorcentajeUtilidad,CategoriaId,DescripcionDelProducto
+from dbo.Productos
+end 
+else
+select Id,CodigoDelProducto,Existencia,costo,PorcentajeUtilidad,CategoriaId,DescripcionDelProducto
+from dbo.Productos where Id = @Id
+
+//pro de Salidas
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[Salida]    Script Date: 16/02/2017 21:25:35 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+ALTER procedure [dbo].[Salida]
+@SalidaId int=0,
+@TipoDeSalidaId int=0,
+@Descripcion varchar(50) = 'Prueba',
+@Numero int,
+@Fecha varchar(10)= '04/02/2017',
+@Detalle  [dbo].[TDetalleDeSalida]readonly
+as
+begin
+if @SalidaId=0
+begin
+insert into Salidas(DescripcionDeSalida, FechaDeSalida, NumeroDeSalida, TipoDeSalidaId)
+values(@Descripcion, Convert(datetime,@Fecha,103), @Numero , @TipoDeSalidaId)
+set @SalidaId = SCOPE_IDENTITY()
+end
+else
+begin
+update E
+set E.DescripcionDeSalida = @Descripcion,
+    E.FechaDeSalida = CONVERT(datetime, @Fecha,103),
+	E.NumeroDeSalida = @Numero,
+	E.TipoDeSalidaId = @TipoDeSalidaId
+	from Salidas as E where E.Id = @SalidaId
+
+Delete DE
+from DetallesDeSalidas as DE
+where DE.SalidaId = @SalidaId
+and not exists (select 1 from @Detalle as D where D.ProductoId = DE.ProductoId)
+
+update DE
+set De.CantidadDeSalida = D.CantidadDeSalida,
+    De.PrecioDeSalida =  D.PrecioDeSalida,
+	De.CostoDelProducto = D.CostoDelProducto,
+	De.UtilidadDelProducto=D.UtilidadDelProducto
+
+from DetallesDeSalidas as DE
+inner join @Detalle as D on D.ProductoId = DE.ProductoId
+where DE.SalidaId = @SalidaId
+end
+
+insert into DetallesDeSalidas(SalidaId, ProductoId, PrecioDeSalida,CostoDelProducto,UtilidadDelProducto,CantidadDeSalida)
+select @SalidaId,ProductoId,PrecioDeSalida,CostoDelProducto,UtilidadDelProducto,CantidadDeSalida from @Detalle as D
+where not exists(
+select 1  from DetallesDeSalidas as DE
+
+where DE.SalidaId = @SalidaId and DE.ProductoId = D.ProductoId
+)
+end
+
+// Pro Categoria
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spCategoria]    Script Date: 16/02/2017 21:25:56 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[spCategoria]
+(
+@Ope char,
+@CodigoDeLaCategoria varchar(3),
+@DescripcionDeCategoria varchar(50)
+)
+as
+begin
+if(@Ope = 'S') or(@Ope = 's')
+select   CodigoDeLaCategoria, DescripcionDeCategoria
+from dbo.Categorias where CodigoDeLaCategoria = @CodigoDeLaCategoria
+else
+if(@Ope = 'I') or (@Ope = 'i')
+insert Categorias(CodigoDeLaCategoria, DescripcionDeCategoria)  values 
+(  
+@CodigoDeLaCategoria,
+@DescripcionDeCategoria)
+else
+if(@Ope = 'E') or (@Ope = 'e')
+delete from dbo.Categorias where CodigoDeLaCategoria = @CodigoDeLaCategoria
+else
+if(@Ope = 'A') or (@Ope = 'a')
+update dbo.Categorias set
+ CodigoDeLaCategoria = @CodigoDeLaCategoria,
+ DescripcionDeCategoria = @DescripcionDeCategoria
+ where CodigoDeLaCategoria = @CodigoDeLaCategoria
+else
+select CodigoDeLaCategoria, DescripcionDeCategoria
+from dbo.Categorias
+end
+
+// Pro Entrada reporte
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spEntradasR]    Script Date: 16/02/2017 21:26:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[spEntradasR](@Numero int)
+as
+select 
+E.NumeroDeEntrada, E.DescripcionDeEntrada, E.FechaDeEntrada, TE.CodigoTipoEntrada,TE.DescripcionTipoDeEntrada,
+DE.CantidadDeEntrada,DE.PrecioDeEntrada, P.DescripcionDelProducto, C.DescripcionDeCategoria
+ from dbo.Entradas as E
+inner join dbo.TiposDeentradas as TE on E.TipoDeEntradaId = TE.Id
+inner join dbo.DetallesDeEntradas as DE on E.Id = DE.EntradaId
+inner join dbo.Productos as P on P.Id = DE.ProductoId
+inner join dbo.Categorias as C on P.CategoriaId = C.Id
+where NumeroDeEntrada = @Numero
+
+// Pro producto
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spProducto]    Script Date: 16/02/2017 21:26:40 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+ALTER procedure [dbo].[spProducto]
+(
+@Ope char,
+@CodigoDelProducto varchar(30),
+@Existencia int,
+@Costo decimal(10,2),
+@PorcentajeUtilidad decimal(10,2),
+@CategoriaId int,
+@DescripcionDelProducto varchar(50)
+)
+as
+begin
+if(@Ope = 'S') or(@Ope = 's')
+select  CodigoDelProducto,Existencia,costo,PorcentajeUtilidad,CategoriaId,DescripcionDelProducto
+from dbo.Productos where CodigoDelProducto = @CodigoDelProducto
+else
+if(@Ope = 'I') or (@Ope = 'i')
+insert dbo.Productos(CodigoDelProducto,Existencia,costo,PorcentajeUtilidad,CategoriaId,DescripcionDelProducto)  
+values(@CodigoDelProducto, @Existencia, @Costo,@PorcentajeUtilidad,@CategoriaId,@DescripcionDelProducto)
+else
+if(@Ope = 'E') or (@Ope = 'e')
+delete from dbo.Productos where CodigoDelProducto = @CodigoDelProducto
+else
+if(@Ope = 'A') or (@Ope = 'a')
+update dbo.Productos set
+ CodigoDelProducto = @CodigoDelProducto,
+ Existencia = @Existencia,
+ costo = @Costo,
+ PorcentajeUtilidad = @PorcentajeUtilidad,
+ CategoriaId = @CategoriaId,
+ DescripcionDelProducto = @DescripcionDelProducto
+ where CodigoDelProducto = @CodigoDelProducto
+else
+select CodigoDelProducto,Existencia,costo,PorcentajeUtilidad,CategoriaId,DescripcionDelProducto
+from dbo.Productos
+end
+
+//Pro salida reporte
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spSalidasR]    Script Date: 16/02/2017 21:27:36 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[spSalidasR](@Numero int)
+as
+select 
+S.NumeroDeSalida, S.DescripcionDeSalida, S.FechaDeSalida, Ts.CodigoTipoSalida,Ts.DescripcionTipoDeSalida,
+DS.CantidadDeSalida,DS.PrecioDeSalida, P.DescripcionDelProducto, C.DescripcionDeCategoria
+ from dbo.Salidas as S
+inner join dbo.TiposDeSalidas as TS on S.TipoDeSalidaId = TS.Id
+inner join dbo.DetallesDeSalidas as DS on S.Id = DS.SalidaId
+inner join dbo.Productos as P on P.Id = DS.ProductoId
+inner join dbo.Categorias as C on P.CategoriaId = C.Id
+where NumeroDeSalida = @Numero
+
+// Pro Tipo de entrada
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spTipoDeEntradas]    Script Date: 16/02/2017 21:27:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[spTipoDeEntradas]
+(
+@Ope char,
+@CodigoTipoEntrada varchar(3),
+@DescripcionTipoDeEntrada varchar(30)
+)
+as 
+begin
+if(@Ope = 'S') or(@Ope = 's')
+select   CodigoTipoEntrada, DescripcionTipoDeEntrada
+from dbo.TiposDeentradas where CodigoTipoEntrada = @CodigoTipoEntrada;
+else
+if(@Ope = 'I') or (@Ope = 'i')
+insert into dbo.TiposDeentradas ( DescripcionTipoDeEntrada, CodigoTipoEntrada)  values 
+(  
+@DescripcionTipoDeEntrada,
+@CodigoTipoEntrada)
+else
+if(@Ope = 'E') or (@Ope = 'e')
+delete from dbo.TiposDeentradas where CodigoTipoEntrada = @CodigoTipoEntrada
+else
+if(@Ope = 'A') or (@Ope = 'a')
+update dbo.TiposDeentradas set
+ CodigoTipoEntrada = @CodigoTipoEntrada,
+ DescripcionTipoDeEntrada = @DescripcionTipoDeEntrada
+ where CodigoTipoEntrada = @CodigoTipoEntrada
+else
+select CodigoTipoEntrada, DescripcionTipoDeEntrada
+from dbo.TiposDeentradas
+end
+
+//Pro tipos de salidas
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spTipoDeSalidas]    Script Date: 16/02/2017 21:28:16 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[spTipoDeSalidas]
+(
+@Ope char,
+@CodigoTipoSalida varchar(3),
+@DescripcionTipoDeSalida varchar(30)
+)
+as 
+begin
+if(@Ope = 'S') or(@Ope = 's')
+select  CodigoTipoSalida, DescripcionTipoDeSalida
+from dbo.TiposDeSalidas where CodigoTipoSalida = @CodigoTipoSalida
+else
+if(@Ope = 'I') or (@Ope = 'i')
+insert into dbo.TiposDeSalidas(CodigoTipoSalida, DescripcionTipoDeSalida)  values 
+( 
+@CodigoTipoSalida, 
+@DescripcionTipoDeSalida)
+else
+if(@Ope = 'E') or (@Ope = 'e')
+delete from dbo.TiposDeSalidas where CodigoTipoSalida = @CodigoTipoSalida
+else
+if(@Ope = 'A') or (@Ope = 'a')
+update dbo.TiposDeSalidas set
+ CodigoTipoSalida = @CodigoTipoSalida,
+ DescripcionTipoDeSalida = @DescripcionTipoDeSalida
+ where CodigoTipoSalida = @CodigoTipoSalida
+else
+select  CodigoTipoSalida, DescripcionTipoDeSalida
+from dbo.TiposDeSalidas
+end
+
+//Pro tipos de entrada reporte
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spTiposDeEntradaR]    Script Date: 16/02/2017 21:28:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+ALTER procedure [dbo].[spTiposDeEntradaR](@Id int)
+as
+if(@Id= 0)
+begin
+select Id,CodigoTipoEntrada, DescripcionTipoDeEntrada 
+from dbo.TiposDeentradas
+end 
+else
+select Id,CodigoTipoEntrada, DescripcionTipoDeEntrada 
+from dbo.TiposDeentradas where Id = @Id
+
+//Pro tipos de salida reporte
+
+USE [Inventario]
+GO
+/****** Object:  StoredProcedure [dbo].[spTiposDeSalidaR]    Script Date: 16/02/2017 21:28:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[spTiposDeSalidaR](@Id int)
+as
+if(@Id= 0)
+begin
+select Id, CodigoTipoSalida, DescripcionTipoDeSalida
+from dbo.TiposDeSalidas
+end 
+else
+select Id, CodigoTipoSalida, DescripcionTipoDeSalida
+from dbo.TiposDeSalidas where Id = @Id

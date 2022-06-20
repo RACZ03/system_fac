@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAC071C0-5070-499A-9016-70D3DB0CE898}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interfaz</RootNamespace>
+    <AssemblyName>Interfaz</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos\frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\frmDetalleEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\frmDetalleEntrada.Designer.cs">
+      <DependentUpon>frmDetalleEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\frmDetalleSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\frmDetalleSalida.Designer.cs">
+      <DependentUpon>frmDetalleSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\frmEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\frmEntrada.Designer.cs">
+      <DependentUpon>frmEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\frmSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\frmSalida.Designer.cs">
+      <DependentUpon>frmSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\frmTiposDeEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\frmTiposDeEntrada.Designer.cs">
+      <DependentUpon>frmTiposDeEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\frmTiposDeSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\frmTiposDeSalida.Designer.cs">
+      <DependentUpon>frmTiposDeSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\DSCategorias.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCategorias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DSEntradas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEntradas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DSProductosR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSProductosR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DSSalidas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSalidas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DSTiposDeEntradaR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTiposDeEntradaR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DSTiposDeSalidaR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTiposDeSalidaR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmCategoriasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmCategoriasR.Designer.cs">
+      <DependentUpon>frmCategoriasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmEntradasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmEntradasR.Designer.cs">
+      <DependentUpon>frmEntradasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmProductosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmProductosR.Designer.cs">
+      <DependentUpon>frmProductosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmSalidasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmSalidasR.Designer.cs">
+      <DependentUpon>frmSalidasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmTiposDeEntradasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmTiposDeEntradasR.Designer.cs">
+      <DependentUpon>frmTiposDeEntradasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmTiposDeSalidaR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmTiposDeSalidaR.Designer.cs">
+      <DependentUpon>frmTiposDeSalidaR.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Catalogos\frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\frmDetalleEntrada.resx">
+      <DependentUpon>frmDetalleEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\frmDetalleSalida.resx">
+      <DependentUpon>frmDetalleSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\frmEntrada.resx">
+      <DependentUpon>frmEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\frmSalida.resx">
+      <DependentUpon>frmSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\frmTiposDeEntrada.resx">
+      <DependentUpon>frmTiposDeEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\frmTiposDeSalida.resx">
+      <DependentUpon>frmTiposDeSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\frmCategoriasR.resx">
+      <DependentUpon>frmCategoriasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmEntradasR.resx">
+      <DependentUpon>frmEntradasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmProductosR.resx">
+      <DependentUpon>frmProductosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmSalidasR.resx">
+      <DependentUpon>frmSalidasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmTiposDeEntradasR.resx">
+      <DependentUpon>frmTiposDeEntradasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmTiposDeSalidaR.resx">
+      <DependentUpon>frmTiposDeSalidaR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RCategorias.rdlc" />
+    <EmbeddedResource Include="Reportes\REntradas.rdlc" />
+    <EmbeddedResource Include="Reportes\RProductos.rdlc" />
+    <EmbeddedResource Include="Reportes\RSalidas.rdlc" />
+    <EmbeddedResource Include="Reportes\RTiposDeEntradas.rdlc" />
+    <EmbeddedResource Include="Reportes\RTiposDeSalidas.rdlc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reportes\DSCategorias.xsc">
+      <DependentUpon>DSCategorias.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSCategorias.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCategorias.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DSCategorias.xss">
+      <DependentUpon>DSCategorias.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSEntradas.xsc">
+      <DependentUpon>DSEntradas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSEntradas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEntradas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DSEntradas.xss">
+      <DependentUpon>DSEntradas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSProductosR.xsc">
+      <DependentUpon>DSProductosR.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSProductosR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSProductosR.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DSProductosR.xss">
+      <DependentUpon>DSProductosR.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSSalidas.xsc">
+      <DependentUpon>DSSalidas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSSalidas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSalidas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DSSalidas.xss">
+      <DependentUpon>DSSalidas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSTiposDeEntradaR.xsc">
+      <DependentUpon>DSTiposDeEntradaR.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSTiposDeEntradaR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTiposDeEntradaR.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DSTiposDeEntradaR.xss">
+      <DependentUpon>DSTiposDeEntradaR.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSTiposDeSalidaR.xsc">
+      <DependentUpon>DSTiposDeSalidaR.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DSTiposDeSalidaR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTiposDeSalidaR.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DSTiposDeSalidaR.xss">
+      <DependentUpon>DSTiposDeSalidaR.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{937f5458-85f7-4157-aea2-765d79c9c907}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categoria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entradas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salidas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventario.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

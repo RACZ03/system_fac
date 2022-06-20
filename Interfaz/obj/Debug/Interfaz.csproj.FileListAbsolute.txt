@@ -1,0 +1,112 @@
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.exe.config
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.exe
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\bin\Debug\Logica.dll
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\bin\Debug\Datos.dll
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\bin\Debug\Logica.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\bin\Debug\Datos.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmTiposDeEntrada.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Properties.Resources.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.exe
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Principal.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmTiposDeSalida.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmDetalleEntrada.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmEntrada.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmDetalleSalida.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmSalida.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmCategoria.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmProductos.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\RdlCompile.cache
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\RdlCompile.compiled
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmEntradasR.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmTiposDeSalidaR.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmTiposDeEntradasR.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmSalidasR.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmCategoriasR.resources
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmProductosR.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.exe
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.exe.config
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\bin\Debug\Logica.dll
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\bin\Debug\Datos.dll
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\bin\Debug\Logica.pdb
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\bin\Debug\Datos.pdb
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmCategoria.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmDetalleEntrada.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmDetalleSalida.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmEntrada.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmProductos.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmSalida.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmTiposDeEntrada.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmTiposDeSalida.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Principal.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmCategoriasR.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmEntradasR.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmProductosR.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmSalidasR.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmTiposDeEntradasR.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmTiposDeSalidaR.resources
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\RdlCompile.cache
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\RdlCompile.compiled
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.exe
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.pdb
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.pdb
+D:\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.exe.config
+D:\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.exe
+D:\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.pdb
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.exe.config
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.exe
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\bin\Debug\Interfaz.pdb
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\bin\Debug\Logica.dll
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\bin\Debug\Datos.dll
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\bin\Debug\Logica.pdb
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\bin\Debug\Datos.pdb
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmCategoria.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmDetalleEntrada.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmDetalleSalida.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmEntrada.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmProductos.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmSalida.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmTiposDeEntrada.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmTiposDeSalida.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Principal.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Properties.Resources.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmCategoriasR.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmEntradasR.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmProductosR.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmSalidasR.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmTiposDeEntradasR.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmTiposDeSalidaR.resources
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.exe
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.pdb
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csproj.AssemblyReference.cache
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csproj.SuggestedBindingRedirects.cache
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmCategoria.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmDetalleEntrada.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmDetalleSalida.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmEntrada.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmProductos.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmSalida.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmTiposDeEntrada.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.frmTiposDeSalida.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Principal.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Properties.Resources.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmCategoriasR.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmEntradasR.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmProductosR.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmSalidasR.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmTiposDeEntradasR.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.Reportes.frmTiposDeSalidaR.resources
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csproj.GenerateResource.cache
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.csproj.CoreCompileInputs.cache
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.exe
+D:\Unan\Programacion en BD\ClaseProgramacion\Interfaz\obj\Debug\Interfaz.pdb

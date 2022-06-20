@@ -1,0 +1,19 @@
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Datos\bin\Debug\Datos.dll
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Datos\bin\Debug\Datos.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Datos\obj\Debug\Datos.dll
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Datos\obj\Debug\Datos.pdb
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Datos\bin\Debug\Datos.dll
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Datos\bin\Debug\Datos.pdb
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Datos\obj\Debug\Datos.dll
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Datos\obj\Debug\Datos.pdb
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Datos\bin\Debug\Datos.dll
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Datos\bin\Debug\Datos.pdb
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Datos\obj\Debug\Datos.dll
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Datos\obj\Debug\Datos.pdb
+D:\Unan\Programacion en BD\ClaseProgramacion\Datos\bin\Debug\Datos.dll
+D:\Unan\Programacion en BD\ClaseProgramacion\Datos\bin\Debug\Datos.pdb
+D:\Unan\Programacion en BD\ClaseProgramacion\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\Unan\Programacion en BD\ClaseProgramacion\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Unan\Programacion en BD\ClaseProgramacion\Datos\obj\Debug\Datos.dll
+D:\Unan\Programacion en BD\ClaseProgramacion\Datos\obj\Debug\Datos.pdb

@@ -1,0 +1,30 @@
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Logica\bin\Debug\Logica.dll
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Logica\bin\Debug\Logica.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Logica\bin\Debug\Datos.dll
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Logica\bin\Debug\Datos.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Logica\obj\Debug\Logica.dll
+C:\Users\ADMIN\Documents\Visual Studio 2013\Projects\Estructura_De_Datos\ClaseProgramacion\Logica\obj\Debug\Logica.pdb
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Logica\bin\Debug\Logica.dll
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Logica\bin\Debug\Logica.pdb
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Logica\bin\Debug\Datos.dll
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Logica\bin\Debug\Datos.pdb
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Logica\obj\Debug\Logica.dll
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Logica\obj\Debug\Logica.pdb
+C:\Users\ADMIN\Desktop\ClaseProgramacion\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Logica\bin\Debug\Logica.dll
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Logica\bin\Debug\Logica.pdb
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Logica\bin\Debug\Datos.dll
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Logica\bin\Debug\Datos.pdb
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Logica\obj\Debug\Logica.dll
+C:\Users\ADMIN\Documents\UNAN\Programacion en BD\ClaseProgramacion\Logica\obj\Debug\Logica.pdb
+D:\Unan\Programacion en BD\ClaseProgramacion\Logica\bin\Debug\Logica.dll
+D:\Unan\Programacion en BD\ClaseProgramacion\Logica\bin\Debug\Logica.pdb
+D:\Unan\Programacion en BD\ClaseProgramacion\Logica\bin\Debug\Datos.dll
+D:\Unan\Programacion en BD\ClaseProgramacion\Logica\bin\Debug\Datos.pdb
+D:\Unan\Programacion en BD\ClaseProgramacion\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+D:\Unan\Programacion en BD\ClaseProgramacion\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+D:\Unan\Programacion en BD\ClaseProgramacion\Logica\obj\Debug\Logica.csproj.CopyComplete
+D:\Unan\Programacion en BD\ClaseProgramacion\Logica\obj\Debug\Logica.dll
+D:\Unan\Programacion en BD\ClaseProgramacion\Logica\obj\Debug\Logica.pdb
